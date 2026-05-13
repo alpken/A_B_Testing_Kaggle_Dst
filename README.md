@@ -30,14 +30,14 @@ requires deeper funnel and cost analysis, not just a headline metric comparison.
 ```
 ab-campaign-analysis/
 ├── data/
-│   └── ab_testing.csv
+│   └── final_a_b_testing.csv
 ├── notebooks/
-│   └── ab_analysis.ipynb       # Full analysis notebook
+│   └── A_B_Testing.ipynb       # Full analysis notebook
 ├── exports/
-│   ├── funnel_volumes.csv       # For Tableau funnel charts
+│   ├── funnel_results.csv       # For Tableau funnel charts
 │   ├── conversion_rates.csv     # Stage-to-stage drop-off rates
-│   ├── ab_test_results.csv      # p-values, CIs, effect sizes
-│   └── daily_metrics.csv        # CPP, CPC by day for trend analysis
+│   ├── test_results.csv      # p-values, CIs, effect sizes
+│   └── metrics.csv        # CPP, CPC by day for trend analysis
 └── README.md
 ```
 
@@ -45,14 +45,14 @@ ab-campaign-analysis/
 
 ## Analysis Framework
 
-### Act 1 — EDA & Sanity Check
+### 1 — EDA & Sanity Check
 Validated spend parity, campaign duration, and daily trend stability before any testing.
 
-### Act 2 — Funnel Analysis
+### 2 — Funnel Analysis
 Tracked 7-stage conversion funnel: `Impressions → Reach → Clicks → Searches → View Content → Add to Cart → Purchase`  
 Identified a **19pp Add-to-Cart gap** (Control: 66.88% vs. Test: 47.45%) as the critical drop-off point.
 
-### Act 3 — Statistical Hypothesis Testing
+### 3 — Statistical Hypothesis Testing
 
 | Metric | Test Used | p-value | Significant |
 |---|---|---|---|
@@ -63,7 +63,7 @@ Identified a **19pp Add-to-Cart gap** (Control: 66.88% vs. Test: 47.45%) as the 
 
 Effect sizes reported via Cohen's h (proportions) and Cohen's d (means).
 
-### Act 4 — Cost Efficiency
+### Act — Cost Efficiency
 | Metric | Control | Test |
 |---|---|---|
 | Cost per Click | $0.43 | $0.42 |
