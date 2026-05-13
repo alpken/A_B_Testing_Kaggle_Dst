@@ -1,10 +1,4 @@
-[README.md](https://github.com/user-attachments/files/27706955/README.md)
-# A_B_Testing_Kaggle_Dst
-
-
-Dashboard View Link: https://alpken.github.io/A_B_Testing_Kaggle_Dst/
-
-# A/B Campaign Analysis — E-commerce Funnel & Cost Efficiency
+## A/B Campaign Analysis — Funnel & Cost Efficiency
 
 A end-to-end product analytics case study comparing two ad campaigns using funnel analysis,
 statistical hypothesis testing, and cost efficiency evaluation to drive a data-backed scaling decision.
@@ -24,6 +18,8 @@ requires deeper funnel and cost analysis, not just a headline metric comparison.
 **Source:** [Kaggle — A/B Testing Dataset](https://www.kaggle.com/)  
 **Campaigns:** Control Campaign vs. Test Campaign  
 **Key features:** Impressions, Reach, Website Clicks, Searches, View Content, Add to Cart, Purchases, Spend
+**ReadMe:** [README.md](https://github.com/user-attachments/files/27706955/README.md)
+**Dashboard View Link:** https://alpken.github.io/A_B_Testing_Kaggle_Dst/
 
 ---
 
