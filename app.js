@@ -3,7 +3,7 @@ console.log('Is this working?');
 let viz;
 
 // Tableau Public Dashboard URL
-const url = "https://public.tableau.com/views/A-B-Testing/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+const url = "https://public.tableau.com/views/A-B-Testing/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
 
 const vizContainer = document.getElementById('vizContainer');
 
