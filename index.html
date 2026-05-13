@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A/B Testing Dashboard</title>
+
+    <!-- Tableau API -->
+    <script type="text/javascript"
+        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #222;
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 22px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0077ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        button:hover {
+            background-color: #005ed1;
+            transform: translateY(-2px);
+        }
+
+        #vizContainer {
+            width: 1200px;
+            height: 1000px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            background: white;
+            margin-bottom: 40px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 1250px) {
+
+            #vizContainer {
+                width: 95%;
+                height: 900px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            button {
+                margin-top: 10px;
+                width: 180px;
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #vizContainer {
+                height: 700px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>A/B Testing Dashboard</h1>
+
+    <div class="button-container">
+        <button id="exportPDF">Generate PDF</button>
+        <button id="exportImage">Generate Image</button>
+    </div>
+
+    <div id="vizContainer"></div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
