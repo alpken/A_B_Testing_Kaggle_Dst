@@ -8,7 +8,7 @@ statistical hypothesis testing, and cost efficiency evaluation to drive a data-b
 ## Business Problem
 
 A company ran two simultaneous ad campaigns — **Control** and **Test** — and needs to decide
-which to scale. Raw purchase numbers are nearly identical (15,683 vs. 15,637), so the decision
+which to scale. Raw purchase numbers are nearly identical, so the decision
 requires deeper funnel and cost analysis, not just a headline metric comparison.
 
 ---
